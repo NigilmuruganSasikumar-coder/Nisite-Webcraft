@@ -3,95 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin:0;
-    overflow-x:hidden;
-    background:#F8FAFC;
-    font-family:Inter,sans-serif;
-}
 
-.background{
-    position:fixed;
-    inset:0;
-    z-index:-2;
-    overflow:hidden;
-    background:
-        radial-gradient(circle at 20% 20%, #E0F2FE 0%, transparent 30%),
-        radial-gradient(circle at 80% 30%, #EDE9FE 0%, transparent 35%),
-        radial-gradient(circle at 50% 90%, #ECFEFF 0%, transparent 35%),
-        linear-gradient(135deg,#FFFFFF,#F8FAFC);
-}
-
-.blob{
-    position:absolute;
-    border-radius:50%;
-    filter:blur(90px);
-    opacity:.65;
-    animation:float 14s ease-in-out infinite;
-}
-
-.blob:nth-child(1){
-    width:420px;
-    height:420px;
-    background:#BAE6FD;
-    top:-80px;
-    left:-80px;
-}
-
-.blob:nth-child(2){
-    width:380px;
-    height:380px;
-    background:#DDD6FE;
-    top:40%;
-    right:-120px;
-    animation-delay:4s;
-}
-
-.blob:nth-child(3){
-    width:320px;
-    height:320px;
-    background:#CFFAFE;
-    bottom:-80px;
-    left:35%;
-    animation-delay:8s;
-}
-
-@keyframes float{
-    0%,100%{
-        transform:translate(0,0) scale(1);
-    }
-    50%{
-        transform:translate(40px,-50px) scale(1.08);
-    }
-}
-
-/* Soft grid */
-
-.grid{
-    position:absolute;
-    inset:0;
-    background-image:
-        linear-gradient(rgba(15,23,42,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(15,23,42,.05) 1px, transparent 1px);
-
-    background-size:60px 60px;
-    mask-image:radial-gradient(circle,black 45%,transparent 100%);
-}
-
-/* Mouse glow */
-
-.glow{
-    position:absolute;
-    width:450px;
-    height:450px;
-    border-radius:50%;
-    background:radial-gradient(circle,
-        rgba(0,212,255,.20),
-        transparent 70%);
-    pointer-events:none;
-    transform:translate(-50%,-50%);
-    transition:left .15s linear, top .15s linear;
-}
 .header-top{
 
     width:100%;
@@ -2923,39 +2835,6 @@ nav a:hover::after{
 
 }
 
-/* Premium Gradient Border */
-
-.service-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    padding:1px;
-
-    border-radius:28px;
-
-    background:linear-gradient(
-    135deg,
-    rgba(37,99,235,.35),
-    rgba(124,58,237,.35));
-
-    -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-
-    -webkit-mask-composite:xor;
-
-    mask-composite:exclude;
-
-    opacity:0;
-
-    transition:.4s;
-
-}
-
 /* Glow */
 
 .service-card::after{
@@ -3615,1039 +3494,436 @@ nav a:hover::after{
 
     transition:all .4s ease;
 
-}
-/*=========================================
-            PORTFOLIO SECTION
-=========================================*/
+}.projects{
 
-.portfolio{
-
-    width:100%;
-
-    padding:130px 4%;
-
+    padding:100px 8%;
     position:relative;
 
-    overflow:hidden;
-
 }
 
-.portfolio-container{
 
-    max-width:1400px;
 
-    margin:auto;
-
-}
-
-/*=========================================
-            SECTION HEADING
-=========================================*/
-
-.portfolio-heading{
+.section-title{
 
     text-align:center;
-
-    max-width:760px;
-
-    margin:0 auto 90px;
-
-}
-
-.portfolio-badge{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    padding:12px 22px;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.8);
-
-    border-radius:50px;
-
-    color:#2563EB;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    box-shadow:
-
-    0 12px 30px rgba(15,23,42,.08);
-
-    margin-bottom:25px;
-
-}
-
-.portfolio-badge i{
-
-    font-size:18px;
-
-}
-
-.portfolio-heading h2{
-
-    font-size:60px;
-
-    font-weight:800;
-
-    color:#111827;
-
-    line-height:1.15;
-
-    margin-bottom:22px;
-
-}
-
-.portfolio-heading h2 span{
-
-    background:linear-gradient(135deg,#2563EB,#7C3AED);
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-}
-
-.portfolio-heading p{
-
     max-width:700px;
-
     margin:auto;
 
-    color:#64748B;
+}
 
-    font-size:18px;
 
-    line-height:1.9;
+.section-title span{
+
+    color:#2563eb;
+    font-weight:700;
+    letter-spacing:2px;
 
 }
 
-/*=========================================
-            PROJECT GRID
-=========================================*/
 
-.portfolio-grid{
+.section-title h2{
 
+    font-size:48px;
+    margin:15px 0;
+    color:#111;
+
+}
+
+
+.section-title p{
+
+    color:#666;
+    font-size:17px;
+
+}
+
+
+
+.project-wrapper{
+
+    margin-top:70px;
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
-    gap:70px;
-
-    align-items:flex-start;
+    gap:35px;
 
 }
 
-/* Background Glow */
 
-.portfolio::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:450px;
-
-    height:450px;
-
-    border-radius:50%;
-
-    background:rgba(37,99,235,.08);
-
-    filter:blur(120px);
-
-    top:120px;
-
-    left:-180px;
-
-}
-
-.portfolio::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:380px;
-
-    height:380px;
-
-    border-radius:50%;
-
-    background:rgba(124,58,237,.08);
-
-    filter:blur(120px);
-
-    right:-120px;
-
-    bottom:0;
-
-}
-/*=========================================
-        PORTFOLIO PROJECT CARD
-=========================================*/
 
 .project-card{
 
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    text-align:center;
-
-}
-
-/*=========================================
-        3D PREVIEW CONTAINER
-=========================================*/
-
-.project-preview{
-
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
     position:relative;
 
-    width:420px;
-
-    height:360px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    perspective:1800px;
-
-    margin-bottom:45px;
-
-}
-
-/*=========================================
-        IMAGE LAYERS
-=========================================*/
-
-.project-preview .layer{
-
-    position:absolute;
-
-    width:270px;
-
-    border-radius:18px;
-
-    background:#fff;
-
-    object-fit:cover;
+    border:1px solid #eee;
 
     box-shadow:
-
-    0 25px 55px rgba(15,23,42,.18);
-
-    transition:.6s ease;
-
-}
-
-/*=========================
-      LEFT IMAGE
-=========================*/
-
-.project-preview .left{
-
-    left:20px;
-
-    transform:
-
-    rotateY(25deg)
-
-    rotateZ(-8deg)
-
-    translateX(-45px)
-
-    scale(.92);
-
-    z-index:1;
-
-}
-
-/*=========================
-      CENTER IMAGE
-=========================*/
-
-.project-preview .center{
-
-    width:300px;
-
-    z-index:5;
-
-    transform:
-
-    translateY(-8px);
-
-}
-
-/*=========================
-      RIGHT IMAGE
-=========================*/
-
-.project-preview .right{
-
-    right:20px;
-
-    transform:
-
-    rotateY(-25deg)
-
-    rotateZ(8deg)
-
-    translateX(45px)
-
-    scale(.92);
-
-    z-index:1;
-
-}
-
-/*=========================================
-            OVERLAY
-=========================================*/
-
-.project-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    opacity:0;
-
-    transition:.45s;
-
-    border-radius:22px;
-
-    background:
-
-    linear-gradient(
-
-    rgba(37,99,235,.15),
-
-    rgba(124,58,237,.18));
-
-}
-
-/*=========================================
-        LIVE BUTTON
-=========================================*/
-
-.visit-btn{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    text-decoration:none;
-
-    padding:16px 28px;
-
-    border-radius:50px;
-
-    color:#fff;
-
-    font-weight:600;
-
-    backdrop-filter:blur(20px);
-
-    background:
-
-    linear-gradient(
-    135deg,
-    #2563EB,
-    #7C3AED);
-
-    box-shadow:
-
-    0 18px 40px rgba(37,99,235,.35);
-
-}
-
-.visit-btn i{
-
-    font-size:18px;
-
-}
-
-/*=========================================
-        PROJECT CONTENT
-=========================================*/
-
-.project-info h3{
-
-    font-size:30px;
-
-    color:#111827;
-
-    margin-bottom:12px;
-
-}
-
-.project-info>span{
-
-    display:inline-block;
-
-    color:#2563EB;
-
-    font-weight:700;
-
-    margin-bottom:18px;
-
-}
-
-.project-info p{
-
-    color:#64748B;
-
-    font-size:16px;
-
-    line-height:1.8;
-
-    max-width:340px;
-
-    margin:0 auto 25px;
-
-}
-
-/*=========================================
-        TECH TAGS
-=========================================*/
-
-.project-tech{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:12px;
-
-    flex-wrap:wrap;
-
-}
-
-.project-tech span{
-
-    padding:10px 18px;
-
-    border-radius:40px;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.85);
-
-    color:#2563EB;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    box-shadow:
-
-    0 10px 25px rgba(15,23,42,.06);
-
-}
-/*=========================================
-        PORTFOLIO CSS - PART 3
-   Animations & Premium Effects
-=========================================*/
-
-/* Section Fade */
-
-.portfolio-section{
-    animation: portfolioFade 1s ease;
-}
-
-@keyframes portfolioFade{
-    from{
-        opacity:0;
-        transform:translateY(70px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* Floating Cards */
-
-.portfolio-card{
-    animation: cardFloat 7s ease-in-out infinite;
-}
-
-.portfolio-card:nth-child(2){
-    animation-delay:1.5s;
-}
-
-.portfolio-card:nth-child(3){
-    animation-delay:3s;
-}
-
-@keyframes cardFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-15px);
-    }
-
-}
-
-/* Image Zoom */
-
-.portfolio-image{
-    overflow:hidden;
-}
-
-.portfolio-image img{
-    transition:1s;
-}
-
-.portfolio-card:hover .portfolio-image img{
-    transform:scale(1.08);
-}
-
-/* Shine Effect */
-
-.portfolio-image::before{
-
-    content:"";
-
-    position:absolute;
-    top:-150%;
-    left:-60%;
-
-    width:45%;
-    height:300%;
-
-    background:linear-gradient(
-        transparent,
-        rgba(255,255,255,.75),
-        transparent
-    );
-
-    transform:rotate(25deg);
-
-    transition:1s;
-}
-
-.portfolio-card:hover .portfolio-image::before{
-    left:160%;
-}
-
-/* Glow Border */
-
-.portfolio-card::after{
-
-    content:"";
-
-    position:absolute;
-    inset:-2px;
-
-    border-radius:28px;
-
-    background:linear-gradient(
-        135deg,
-        rgba(37,99,235,.25),
-        rgba(124,58,237,.25)
-    );
-
-    z-index:-1;
-
-    filter:blur(25px);
-
-    opacity:0;
+    0 20px 40px rgba(0,0,0,.08);
 
     transition:.5s;
-}
 
-.portfolio-card:hover::after{
-    opacity:1;
-}
-
-/* Project Title */
-
-.project-info h3{
-
-    transition:.35s;
-}
-
-.portfolio-card:hover h3{
-    color:#2563EB;
-}
-
-/* Button Animation */
-
-.portfolio-btn{
-
-    position:relative;
-    overflow:hidden;
-}
-
-.portfolio-btn::before{
-
-    content:"";
-
-    position:absolute;
-    top:0;
-    left:-100%;
-
-    width:100%;
-    height:100%;
-
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,.35),
-        transparent
-    );
-
-    transition:.8s;
-}
-
-.portfolio-btn:hover::before{
-    left:100%;
-}
-
-.portfolio-btn:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 18px 40px rgba(37,99,235,.30);
-}
-
-/* Background Glow */
-
-.portfolio-section::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:500px;
-    height:500px;
-
-    border-radius:50%;
-
-    background:rgba(37,99,235,.08);
-
-    filter:blur(140px);
-
-    left:-180px;
-    top:120px;
-
-    z-index:-1;
-}
-
-.portfolio-section::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:450px;
-    height:450px;
-
-    border-radius:50%;
-
-    background:rgba(124,58,237,.08);
-
-    filter:blur(130px);
-
-    right:-150px;
-    bottom:-80px;
-
-    z-index:-1;
-}
-
-/* Small Floating Icons */
-
-.floating-dot{
-
-    position:absolute;
-
-    width:12px;
-    height:12px;
-
-    border-radius:50%;
-
-    background:#2563EB;
-
-    animation:dotMove 6s infinite ease-in-out;
-}
-
-.floating-dot:nth-child(1){
-    top:120px;
-    left:10%;
-}
-
-.floating-dot:nth-child(2){
-    right:12%;
-    top:260px;
-    animation-delay:2s;
-}
-
-.floating-dot:nth-child(3){
-    bottom:120px;
-    left:25%;
-    animation-delay:4s;
-}
-
-@keyframes dotMove{
-
-    0%,100%{
-        transform:translateY(0);
-        opacity:.5;
-    }
-
-    50%{
-        transform:translateY(-20px);
-        opacity:1;
-    }
-
-}
-/*=========================================
-      PORTFOLIO - PART 4
-    PREMIUM HOVER & FLOAT EFFECTS
-=========================================*/
-
-/* Floating Animation */
-
-.project-card{
-
-    animation: projectFloat 7s ease-in-out infinite;
+    animation:fadeUp .8s ease forwards;
 
 }
 
-.project-card:nth-child(2){
 
-    animation-delay:1.5s;
-
-}
-
-.project-card:nth-child(3){
-
-    animation-delay:3s;
-
-}
-
-@keyframes projectFloat{
-
-    0%,100%{
-
-        transform:translateY(0px);
-
-    }
-
-    50%{
-
-        transform:translateY(-15px);
-
-    }
-
-}
-
-/*----------------------------------*/
-/* Card Hover */
-/*----------------------------------*/
-
-.project-card{
-
-    transition:.5s ease;
-
-}
 
 .project-card:hover{
 
-    transform:translateY(-20px);
-
-}
-
-/*----------------------------------*/
-/* 3D Image Hover */
-/*----------------------------------*/
-
-.project-preview{
-
-    transition:.6s;
-
-    transform-style:preserve-3d;
-
-}
-
-.project-card:hover .center{
-
     transform:
-    scale(1.08)
-    translateY(-15px);
-
-}
-
-.project-card:hover .left{
-
-    transform:
-
-    rotateY(35deg)
-
-    rotateZ(-12deg)
-
-    translateX(-95px)
-
-    scale(.88);
-
-}
-
-.project-card:hover .right{
-
-    transform:
-
-    rotateY(-35deg)
-
-    rotateZ(12deg)
-
-    translateX(95px)
-
-    scale(.88);
-
-}
-
-/*----------------------------------*/
-/* Live Preview */
-/*----------------------------------*/
-
-.project-card:hover .project-overlay{
-
-    opacity:1;
-
-}
-
-/*----------------------------------*/
-/* Overlay Blur */
-/*----------------------------------*/
-
-.project-overlay{
-
-    backdrop-filter:blur(6px);
-
-}
-
-/*----------------------------------*/
-/* Visit Button */
-/*----------------------------------*/
-
-.visit-btn{
-
-    transition:.35s;
-
-}
-
-.visit-btn:hover{
-
-    transform:
-
-    translateY(-5px)
-
-    scale(1.05);
+    translateY(-15px)
+    rotateX(5deg);
 
     box-shadow:
-
-    0 25px 45px rgba(37,99,235,.35);
-
-}
-
-.visit-btn i{
-
-    transition:.35s;
+    0 35px 70px rgba(0,0,0,.15);
 
 }
 
-.visit-btn:hover i{
 
-    transform:translateX(6px);
 
-}
+/* Image Animation */
 
-/*----------------------------------*/
-/* Tech Tags */
-/*----------------------------------*/
+.project-img{
 
-.project-tech span{
-
-    transition:.35s;
+    overflow:hidden;
+    height:240px;
 
 }
 
-.project-tech span:hover{
 
-    background:#2563EB;
+.project-img img{
 
-    color:#ffffff;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 
-    transform:translateY(-4px);
+    transition:.7s;
 
 }
 
-/*----------------------------------*/
-/* Title Hover */
-/*----------------------------------*/
+
+
+.project-card:hover img{
+
+    transform:
+    scale(1.12);
+
+}
+
+
+
+/* Content */
+
+.project-info{
+
+    padding:28px;
+
+}
+
+
 
 .project-info h3{
 
-    transition:.35s;
+    font-size:25px;
+    color:#111;
+    margin-bottom:15px;
 
 }
 
-.project-card:hover h3{
 
-    color:#2563EB;
 
-}
+.project-info p{
 
-/*----------------------------------*/
-/* Bottom Button */
-/*----------------------------------*/
-
-.portfolio-bottom{
-
-    margin-top:90px;
-
-    text-align:center;
+    color:#666;
+    line-height:1.7;
 
 }
 
-.portfolio-btn{
 
-    display:inline-flex;
 
-    align-items:center;
+.tags{
 
-    gap:12px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:25px 0;
 
-    padding:18px 36px;
+}
+
+
+
+.tags span{
+
+    padding:7px 16px;
+    border-radius:30px;
+
+    background:#f1f5ff;
+    color:#2563eb;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+
+
+
+.links{
+
+    display:flex;
+    gap:15px;
+
+}
+
+
+
+.links a{
 
     text-decoration:none;
 
-    border-radius:50px;
+    padding:12px 22px;
 
-    color:#fff;
+    border-radius:30px;
 
-    font-weight:600;
+    background:#111;
+    color:white;
 
-    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    font-size:14px;
 
-    box-shadow:
-
-    0 20px 45px rgba(37,99,235,.25);
-
-    transition:.35s;
+    transition:.3s;
 
 }
 
-.portfolio-btn:hover{
 
-    transform:translateY(-6px);
 
-    box-shadow:
+.links a:hover{
 
-    0 30px 60px rgba(37,99,235,.35);
+    transform:translateY(-5px);
 
 }
 
-.portfolio-btn i{
 
-    transition:.35s;
 
-}
+/* Floating shine effect */
 
-.portfolio-btn:hover i{
-
-    transform:translateX(8px);
-
-}
-
-/*----------------------------------*/
-/* Glass Reflection */
-/*----------------------------------*/
-
-.project-preview::before{
+.project-card::before{
 
     content:"";
 
     position:absolute;
 
-    top:-150%;
-
-    left:-40%;
-
-    width:40%;
-
-    height:350%;
+    width:150px;
+    height:400px;
 
     background:
-
     linear-gradient(
-
     transparent,
+    rgba(255,255,255,.8),
+    transparent
+    );
 
-    rgba(255,255,255,.65),
+    top:-100px;
+    left:-200px;
 
-    transparent);
+    transform:rotate(35deg);
 
-    transform:rotate(25deg);
-
-    transition:1s;
-
-}
-
-.project-card:hover .project-preview::before{
-
-    left:160%;
+    transition:.8s;
 
 }
 
-/*----------------------------------*/
-/* Image Shadow */
-/*----------------------------------*/
 
-.project-preview img{
 
-    transition:.6s;
+.project-card:hover::before{
+
+    left:120%;
+
+}
+
+
+
+/* Scroll Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@media(max-width:1000px){
+
+.project-wrapper{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:650px){
+
+.project-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+}
+.project-button-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+
+
+.all-projects-btn{
+
+    display:flex;
+    justify-content:center;
+
+    margin-top:70px;
+
+}
+
+
+
+.project-view-btn{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:16px 38px;
+
+    border-radius:50px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+    font-weight:600;
+
+    position:relative;
+    overflow:hidden;
 
     box-shadow:
+    0 15px 35px rgba(37,99,235,.25);
 
-    0 25px 60px rgba(15,23,42,.18);
+    transition:.45s;
 
 }
 
-.project-card:hover img{
+
+
+/* Arrow Circle */
+
+.project-view-btn span{
+
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#2563eb;
+
+    transition:.4s;
+
+}
+
+
+
+/* Hover */
+
+.project-view-btn:hover{
+
+    transform:translateY(-8px);
 
     box-shadow:
+    0 25px 50px rgba(37,99,235,.4);
 
-    0 40px 80px rgba(37,99,235,.20);
+}
+
+
+
+.project-view-btn:hover span{
+
+    transform:translateX(7px);
+
+}
+
+
+
+/* Shine Animation */
+
+.project-view-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:100%;
+
+    top:0;
+    left:-120px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+
+
+.project-view-btn:hover::before{
+
+    left:130%;
 
 }
 /*=========================================
@@ -4675,7 +3951,11 @@ nav a:hover::after{
 }
 
 /*=========================================
-            SECTION HEADING
+            SECTION HEADING   background:linear-gradient(
+        135deg,
+        #2563eb,
+        #00a8ff
+    );
 =========================================*/
 
 .testimonial-heading{
