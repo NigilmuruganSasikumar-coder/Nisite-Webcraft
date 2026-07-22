@@ -2374,7 +2374,10 @@ nav{
     .contact-heading h2{
         font-size:34px;
     }
-
+    .join-btn{
+        padding:10px 15px;
+        font-size:12px;
+    }
     .testimonial-heading p,
     .faq-heading p,
     .contact-heading p{
