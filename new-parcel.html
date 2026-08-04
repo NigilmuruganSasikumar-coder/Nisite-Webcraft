@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Parcel | OFFBEAT</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
+    <div class="bg-circle circle3"></div>
+
+    <div class="mobile-container">
+
+        <!-- Header -->
+
+        <header class="page-header">
+
+            <a href="index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <div class="title">
+
+                <h2>New Parcel</h2>
+                <p>Create Shipping Label</p>
+
+            </div>
+
+        </header>
+
+        <!-- FORM -->
+
+        <form id="parcelForm">
+
+            <!-- Customer -->
+
+            <div class="form-card">
+
+                <h3>
+                    <i class="fa-solid fa-user"></i>
+                    Customer Details
+                </h3>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Customer Name"
+                    required>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    maxlength="10"
+                    required>
+
+                <textarea
+                    id="address"
+                    placeholder="Full Address"
+                    rows="3"
+                    required></textarea>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="City">
+
+                <input
+                    type="text"
+                    id="district"
+                    placeholder="District">
+
+                <input
+                    type="text"
+                    id="state"
+                    value="Tamil Nadu">
+
+                <input
+                    type="number"
+                    id="pincode"
+                    placeholder="Pincode">
+
+            </div>
+
+            <!-- Order -->
+
+            <div class="form-card">
+
+                <h3>
+                    <i class="fa-solid fa-box"></i>
+                    Order Details
+                </h3>
+
+                <input
+                    type="text"
+                    id="orderId"
+                    placeholder="Auto Order ID">
+
+                <input
+                    type="text"
+                    id="product"
+                    placeholder="Product Name"
+                    required>
+
+                <div class="two-column">
+
+                    <select id="size">
+
+                        <option value="">Size</option>
+
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+
+                    </select>
+
+                    <input
+                        type="text"
+                        id="color"
+                        placeholder="Color">
+
+                </div>
+
+                <div class="two-column">
+
+                    <input
+                        type="number"
+                        id="qty"
+                        placeholder="Qty"
+                        value="1">
+
+                    <input
+                        type="number"
+                        id="weight"
+                        placeholder="Weight (g)">
+
+                </div>
+
+            </div>
+
+            <!-- Courier -->
+
+            <div class="form-card">
+
+                <h3>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Courier Details
+                </h3>
+
+                <select id="courier">
+
+                    <option>Choose Courier</option>
+
+                    <option>ST Courier</option>
+
+                    <option>DTDC</option>
+
+                    <option>Professional Courier</option>
+
+                    <option>India Post</option>
+
+                    <option>Delhivery</option>
+
+                    <option>XpressBees</option>
+
+                    <option>Blue Dart</option>
+
+                </select>
+
+                <input
+                    type="text"
+                    id="tracking"
+                    placeholder="Tracking Number">
+
+            </div>
+
+            <!-- Payment -->
+
+            <div class="form-card">
+
+                <h3>
+                    <i class="fa-solid fa-wallet"></i>
+                    Payment
+                </h3>
+
+                <select id="payment">
+
+                    <option>COD</option>
+
+                    <option>Prepaid</option>
+
+                </select>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount">
+
+            </div>
+
+            <!-- Notes -->
+
+            <div class="form-card">
+
+                <h3>
+                    <i class="fa-solid fa-note-sticky"></i>
+                    Notes
+                </h3>
+
+                <textarea
+                    id="notes"
+                    rows="4"
+                    placeholder="Special Instructions"></textarea>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="button-group">
+
+                
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="labelBtn">
+
+                    <i class="fa-solid fa-tag"></i>
+
+                    Generate Label
+
+                </button>
+
+                <button
+                    type="reset"
+                    class="secondary-btn">
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <footer>
+
+            <small>
+
+                Designed & Developed by
+
+                <strong>Nisite Webcraft</strong>
+
+            </small>
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="parcel.js"></script>
+
+</body>
+
+</html>

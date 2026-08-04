@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>OFFBEAT Admin Login</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="login1.css">
+
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- Animated Background -->
+    <!-- ===================================== -->
+
+    <div class="background">
+
+        <span class="orb orb1"></span>
+        <span class="orb orb2"></span>
+        <span class="orb orb3"></span>
+
+        <div class="grid"></div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- Login Container -->
+    <!-- ===================================== -->
+
+    <main class="login-page">
+
+        <section class="login-card">
+
+            <!-- Logo -->
+
+            <div class="logo-wrapper">
+
+                <div class="logo-ring">
+
+                    <div class="logo-circle">
+
+                        <i class="ri-box-3-line"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Heading -->
+
+            <div class="login-heading">
+
+                <h1>OFFBEAT</h1>
+
+                <h2>Parcel Management</h2>
+
+                <p>
+                    Secure Administrator Login
+                </p>
+
+            </div>
+
+            <!-- Login Form -->
+
+            <form id="loginForm"
+                autocomplete="off">
+
+                <!-- User ID -->
+
+                <div class="input-group">
+
+                    <label>User ID</label>
+
+                    <div class="input-box">
+
+                        <i class="ri-user-3-line"></i>
+
+                        <input
+                            type="text"
+                            id="userId"
+                            placeholder="Enter User ID"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <i class="ri-lock-2-line"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter Password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="togglePassword">
+
+                            <i class="ri-eye-line"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Remember -->
+
+                <div class="login-options">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox">
+
+                        <span>Remember Me</span>
+
+                    </label>
+
+                </div>
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    <span>
+
+                        <i class="ri-login-circle-line"></i>
+
+                        Login
+
+                    </span>
+
+                </button>
+
+            </form>
+
+            <!-- Divider -->
+
+            <div class="divider">
+
+                <span></span>
+
+                <p>Secure Access</p>
+
+                <span></span>
+
+            </div>
+
+            <!-- Security -->
+
+            <!-- Security -->
+
+<div class="security">
+
+    <i class="ri-shield-check-line"></i>
+
+    <span>
+        Protected by Firebase Authentication
+    </span>
+
+</div>
+
+<!-- Developer -->
+<div class="developer">
+
+    <div class="developer-line"></div>
+
+    <p>Crafted with ❤️ by</p>
+
+    <h3>Nisite Webcraft</h3>
+
+</div>
+
+        </section>
+
+    </main>
+
+    <!-- ===================================== -->
+    <!-- Loading Overlay -->
+    <!-- ===================================== -->
+
+    <div class="loading-screen"
+        id="loadingScreen">
+
+        <div class="loader">
+
+            <div class="loader-ring"></div>
+
+            <div class="loader-ring"></div>
+
+            <div class="loader-ring"></div>
+
+        </div>
+
+        <h3>Authenticating...</h3>
+
+        <p>Please wait</p>
+
+    </div>
+
+    <!-- JS -->
+
+    <script type="module"
+        src="login1.js"></script>
+
+</body>
+
+</html>
