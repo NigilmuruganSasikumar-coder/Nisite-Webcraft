@@ -1,249 +1,1706 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisite Webcraft | Professional Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="scroll-ani.css">
 
-    <title>OFFBEAT Parcel Management</title>
-
-    <!-- Google Font -->
+    <link rel="icon" href="image/logo2.jpeg">
+        <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="baby">
-        
-    <!-- Animated Background -->
+    <div class="background">
 
-    <div class="bg-circle circle1"></div>
-    <div class="bg-circle circle2"></div>
-    <div class="bg-circle circle3"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
 
+        <div class="grid"></div>
 
-    <!-- Mobile Container -->
+        <div class="glow" id="glow"></div>
 
-    <div class="mobile-container">
+    </div>
 
-        <!-- Header -->
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
 
-        <header>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
 
-            <div class="logo-box">
+    <!-- Back To Top -->
+    <button class="top-btn" id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-                <img src="img/logo.png" alt="OFFBEAT Logo">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919095388843"
+        class="whatsapp-btn2"
+        target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-            </div>
+    <div class="header-top">
+        <div>
+            <a href="tel:+919095388843">+91 9095388843</a>
+            <a href="tel:+919488161788">+91 9488161788</a>
+        </div>
+        <div>
+            <h4>Crafting Digital Excellence, Empowering Business Growth</h4>
+        </div>
+        <div>
+            <a href="#contact">Get Quote</a>
+            <a href="reviews.html">Review</a>
+            <a href="portfelio.html">Our Work</a>
+        </div>
 
-            <div class="title">
+    </div>
 
-                <h2>OFFBEAT</h2>
+    <div class="header">
+        <div class="logo">
+            <p><img src="image/logo.jpeg" alt="Nisite Webcraft logo"></p>
+            <h2>Nisite Webcraft</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfelio.html">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-                <p>Parcel Management</p>
+        <a href="login.html" class="join-btn">
+            <span>Join Our Team</span>
+            <i class="ri-arrow-right-up-line"></i>
+        </a>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-            </div>
+    <div class="mobile-menu" id="mobileMenu">
 
-        </header>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfelio.html">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
 
+    </div>
+      <!-- ================= HOME SECTION ================= -->
 
-        <!-- Welcome Card -->
+    <section class="home" id="home">
 
-        <section class="welcome-card">
+    <div class="home-container">
 
-            <h3>Hello 👋</h3>
+        <!-- LEFT CONTENT -->
+
+        <div class="home-content">
+
+            <span class="home-badge">
+                <i class="ri-sparkling-2-fill"></i>
+                Premium Web Design & Development Agency
+            </span>
+
+            <h1>
+                We Build
+                <span>Beautiful Websites</span>
+                That Grow Your
+                Business Online.
+            </h1>
 
             <p>
-                Welcome to OFFBEAT Parcel Management System
+                Nisite Webcraft crafts premium websites that combine modern
+                design, seamless performance, and exceptional user experiences.
+                From startups to established businesses, we help brands build a
+                powerful digital presence.
             </p>
 
-        </section>
+            <div class="home-buttons">
 
+                <a href="contact.html#contactform" class="primary-btn">
+                    Start Your Project
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+                <a href="portfelio.html" class="secondary-btn">
+                    View Portfolio
+                </a>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="home-stats">
+
+                <div class="stat-box">
+                    <h2>15+</h2>
+                    <span>Projects Delivered</span>
+                </div>
+
+                <div class="stat-box">
+                    <h2>100%</h2>
+                    <span>Responsive Design</span>
+                </div>
+
+                <div class="stat-box">
+                    <h2>24/7</h2>
+                    <span>Client Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="home-visual">
+
+            <!-- Floating Tech -->
+
+            <div class="tech-tag html">
+                <i class="ri-html5-fill"></i>
+                HTML5
+            </div>
+
+            <div class="tech-tag css">
+                <i class="ri-css3-fill"></i>
+                CSS3
+            </div>
+
+            <div class="tech-tag js">
+                <i class="ri-javascript-fill"></i>
+                JavaScript
+            </div>
+
+            <div class="tech-tag figma">
+                <i class="ri-figma-fill"></i>
+                Figma
+            </div>
+
+            <div class="tech-tag github">
+                <i class="ri-github-fill"></i>
+                GitHub
+            </div>
+
+            <!-- Browser Mockup -->
+
+            <div class="browser-window">
+
+                <div class="browser-header">
+
+                    <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="browser-address">
+                        https://nisitewebcraft.com
+                    </div>
+
+                </div>
+
+                <div class="browser-content">
+
+                    <div class="dashboard-card hero-card">
+
+                        <h3>Business Dashboard</h3>
+
+                        <p>
+                            Modern websites with premium UI,
+                            responsive layouts and optimized
+                            performance.
+                        </p>
+
+                    </div>
+
+                    <div class="mini-cards">
+
+                        <div class="mini-card">
+                            <i class="ri-code-box-line"></i>
+                            <h4>Development</h4>
+                        </div>
+
+                        <div class="mini-card">
+                            <i class="ri-layout-4-line"></i>
+                            <h4>UI / UX</h4>
+                        </div>
+
+                        <div class="mini-card">
+                            <i class="ri-smartphone-line"></i>
+                            <h4>Responsive</h4>
+                        </div>
+
+                        <div class="mini-card">
+                            <i class="ri-rocket-2-line"></i>
+                            <h4>Launch</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Trusted Companies -->
+
+    <div class="hero-note">
+    <i class="ri-check-double-line"></i>
+    <span>Trusted by businesses for modern, high-performance web solutions.</span>
+</div>
+
+    <!-- Scroll Down -->
+
+    <div class="scroll-down">
+
+        <span></span>
+
+    </div>
+
+    </section>
+
+    <!-- ==========================================
+                ABOUT SECTION
+    ========================================== -->
+
+    <section class="about" id="about">
+
+    <div class="about-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="about-content">
+
+            <span class="about-badge">
+                <i class="ri-user-star-line"></i>
+                About Nisite Webcraft
+            </span>
+
+            <h2>
+                Building Websites That
+                <span>Inspire, Perform & Grow</span>
+            </h2>
+
+            <p>
+                Nisite Webcraft is a modern web development agency dedicated to
+                creating premium digital experiences. We combine creative design,
+                clean development, and powerful technology to build websites that
+                help businesses establish a strong online presence.
+            </p>
+
+            <p>
+                Whether you're a startup, local business, or growing brand, we
+                deliver fast, responsive, and SEO-friendly websites that turn
+                visitors into customers while reflecting your unique identity.
+            </p>
+
+            <!-- FEATURES -->
+
+            <div class="about-features">
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>Premium UI / UX Design</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>Responsive Development</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>SEO Optimized Websites</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>Fast Performance</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>Secure & Scalable</span>
+                </div>
+
+                <div class="feature-box">
+                    <i class="ri-check-double-line"></i>
+                    <span>Ongoing Support</span>
+                </div>
+
+            </div>
+
+            <a href="about.html" class="about-btn">
+                Discover More
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="about-visual">
+
+            <!-- Floating Card -->
+
+            <div class="experience-card">
+
+                <h2>2+</h2>
+
+                <span>Years of Learning & Development</span>
+
+            </div>
+
+            <!-- Main Glass Card -->
+
+            <div class="about-card">
+
+                <div class="card-top">
+
+                    <div class="profile-circle">
+                        <i class="ri-code-box-line"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Nisite Webcraft</h3>
+
+                        <p>Digital Solutions Agency</p>
+
+                    </div>
+
+                </div>
+
+                <div class="progress-box">
+
+                    <div class="progress-info">
+                        <span>Website Quality</span>
+                        <strong>100%</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+                <div class="service-grid">
+
+                    <div class="service-mini">
+                        <i class="ri-global-line"></i>
+                        <span>Business Websites</span>
+                    </div>
+
+                    <div class="service-mini">
+                        <i class="ri-shopping-bag-3-line"></i>
+                        <span>E-Commerce</span>
+                    </div>
+
+                    <div class="service-mini">
+                        <i class="ri-layout-4-line"></i>
+                        <span>UI / UX</span>
+                    </div>
+
+                    <div class="service-mini">
+                        <i class="ri-rocket-2-line"></i>
+                        <span>SEO Ready</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Floating Badges -->
+
+            <div class="floating-badge badge-one">
+                <i class="ri-html5-fill"></i>
+                HTML
+            </div>
+
+            <div class="floating-badge badge-two">
+                <i class="ri-css3-fill"></i>
+                CSS
+            </div>
+
+            <div class="floating-badge badge-three">
+                <i class="ri-javascript-fill"></i>
+                JavaScript
+            </div>
+
+            <div class="floating-badge badge-four">
+                <i class="ri-github-fill"></i>
+                GitHub
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Statistics -->
+
+    <div class="about-stats">
+
+        <div class="about-stat">
+
+            <h2>15+</h2>
+
+            <p>Projects Completed</p>
+
+        </div>
+
+        <div class="about-stat">
+
+            <h2>100%</h2>
+
+            <p>Responsive Websites</p>
+
+        </div>
+
+        <div class="about-stat">
+
+            <h2>24/7</h2>
+
+            <p>Support Available</p>
+
+        </div>
+
+        <div class="about-stat">
+
+            <h2>100%</h2>
+
+            <p>Client Commitment</p>
+
+        </div>
+
+    </div>
+
+    </section>
+
+<!--=========================================
+            SERVICES SECTION
+==========================================-->
+
+    <section class="services" id="services">
+
+    <div class="services-container">
+
+        <!-- Heading -->
+
+        <div class="services-heading">
+
+            <span class="services-badge">
+                <i class="ri-service-line"></i>
+                Our Services
+            </span>
+
+            <h2>
+                Digital Solutions That
+                <span>Elevate Your Business</span>
+            </h2>
+
+            <p>
+                We create modern, high-performance websites and digital experiences
+                that help businesses build trust, attract customers, and grow online.
+            </p>
+
+        </div>
+
+        <!-- Services Grid -->
+
+        <div class="services-grid">
+
+            <!-- Card 1 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-global-line"></i>
+                </div>
+
+                <h3>Business Website</h3>
+
+                <p>
+                    Professional websites designed to showcase your business
+                    and generate quality leads.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-shopping-cart-2-line"></i>
+                </div>
+
+                <h3>E-Commerce Store</h3>
+
+                <p>
+                    Secure online stores with payment gateways, inventory,
+                    and a seamless shopping experience.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-layout-4-line"></i>
+                </div>
+
+                <h3>UI / UX Design</h3>
+
+                <p>
+                    Beautiful user interfaces crafted to improve engagement
+                    and deliver exceptional experiences.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-smartphone-line"></i>
+                </div>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                    Websites that look stunning and work perfectly across
+                    desktop, tablet, and mobile devices.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-speed-up-line"></i>
+                </div>
+
+                <h3>Performance Optimization</h3>
+
+                <p>
+                    Improve loading speed, user experience, and overall
+                    website performance for better results.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-search-eye-line"></i>
+                </div>
+
+                <h3>SEO Optimization</h3>
+
+                <p>
+                    SEO-friendly development to improve search visibility
+                    and help your business reach more customers.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 7 -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    <i class="ri-shield-check-line"></i>
+                </div>
+
+                <h3>Website Maintenance</h3>
+
+                <p>
+                    Continuous updates, backups, security monitoring,
+                    and technical support for your website.
+                </p>
+
+                <a href="services.html#serviceDetails">
+                    Learn More
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+            <!-- Card 8 -->
+
+            <div class="service-card featured-service">
+
+                <div class="service-icon">
+                    <i class="ri-rocket-2-line"></i>
+                </div>
+
+                <h3>Custom Web Solutions</h3>
+
+                <p>
+                    Tailor-made websites and web applications developed
+                    specifically for your business goals.
+                </p>
+
+                <a href="contact.html#contactform">
+                    Start Your Project
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Banner -->
+
+        <div class="service-banner">
+
+            <div class="banner-content">
+
+                <h3>Ready to Build Something Amazing?</h3>
+
+                <p>
+                    Let's transform your ideas into a modern, high-performing digital experience.
+                </p>
+
+            </div>
+
+            <a href="contact.html" class="service-btn">
+
+                Get Free Consultation
+
+                <i class="ri-arrow-right-up-line"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!--=========================================
+            PORTFOLIO SECTION
+==========================================-->
+
+     <section class="projects" id="projects">
+
+    <div class="section-title">
+        <span>My Portfolio</span>
+        <h2>Featured Projects</h2>
+        <p>
+            Some of my best works showcasing modern design,
+            responsive development and interactive experiences.
+        </p>
+    </div>
+
+
+    <div class="project-wrapper">
+
+
+        <div class="project-card">
+
+            <div class="project-img">
+                <img src="image/selvamurugan 1.png" alt="">
+            </div>
+
+            <div class="project-info">
+
+                <h3>Selvamurugan Fast Drills</h3>
+
+                <p>
+                    A professional business website designed for
+                    borewell drilling services with animations,
+                    responsive layout and customer enquiry features.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+
+                <div class="links">
+
+                    <a href="https://selvamurugan-fast-drills.vercel.app/">
+                        Live Preview
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                    <a href="https://github.com/NigilmuruganSasikumar-coder/Selvamurugan-Fast-Drills">
+                        Github
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-img">
+                <img src="image/parcellabel.png" alt="">
+            </div>
+
+            <div class="project-info">
+
+                <h3>Parcel Label Web App</h3>
+
+                <p>
+                    A web application for generating parcel labels,
+                    managing history and creating printable formats
+                    with smooth user experience.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+
+
+                <div class="links">
+
+                    <a href="https://parcel-lable-webapp.vercel.app/">
+                        Live Preview
+                    </a>
+
+                    <a href="https://github.com/NigilmuruganSasikumar-coder/parcel-lable-webapp">
+                        Github
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-img">
+                <img src="image/myport .png" alt="">
+            </div>
+
+            <div class="project-info">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A modern, responsive portfolio showcasing my web development skills,
+                     featured projects, and services with smooth animations,
+                      clean UI, and an engaging user experience.
+                </p>
+
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+
+                <div class="links">
+
+                    <a href="https://nigilmurugan.vercel.app/">
+                        Live Preview
+                    </a>
+
+                    <a href="https://github.com/NigilmuruganSasikumar-coder/portfolio.">
+                        Github
+                    </a>
+
+                </div>
+
+            </div>
+                      
+        </div>
+</div>
+
+
+    </div>
+
+<div class="all-projects-btn">
+
+    <a href="portfelio.html" class="project-view-btn">
+        View All Projects
+        <span>
+            <i class="ri-arrow-right-line"></i>
+        </span>
+    </a>
+
+</div>
+
+</section>
+
+    <!--=========================================
+            TESTIMONIALS SECTION
+==========================================-->
+
+    <section class="testimonials" id="testimonials">
+
+    <div class="testimonials-container">
+
+        <!-- Section Heading -->
+
+        <div class="testimonial-heading">
+
+            <span class="testimonial-badge">
+                <i class="ri-chat-quote-line"></i>
+                Client Testimonials
+            </span>
+
+            <h2>
+                Trusted By Businesses
+                <span>Across Industries</span>
+            </h2>
+
+            <p>
+                We build more than websites—we build long-lasting relationships.
+                Here's what our clients say about working with Nisite Webcraft.
+            </p>
+
+        </div>
 
         <!-- Statistics -->
 
-        <section class="stats">
+        <div class="testimonial-stats">
 
-            <div class="card">
+            <div class="review-stat">
+                <h3>5.0★</h3>
+                <p>Average Rating</p>
+            </div>
 
-                <i class="fa-solid fa-box"></i>
+            <div class="review-stat">
+                <h3>15+</h3>
+                <p>Projects Completed</p>
+            </div>
 
-                <h2 id="todayParcel">0</h2>
+            <div class="review-stat">
+                <h3>100%</h3>
+                <p>Client Satisfaction</p>
+            </div>
 
-                <span>Today's Parcels</span>
+        </div>
+
+        <!-- Main Layout -->
+
+        <div class="testimonial-wrapper">
+
+            <!-- Featured Review -->
+
+            <div class="featured-review">
+
+                <div class="quote-icon">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+
+                <div class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+
+                <p class="review-text">
+                    Nisite Webcraft transformed our online presence with a
+                    modern and professional website. Their attention to detail,
+                    smooth communication, and commitment to quality exceeded
+                    our expectations.
+                </p>
+
+                <div class="client">
+
+                    <img src="image/client1.jpeg" alt="Client">
+
+                    <div>
+
+                        <h4>Selvamurugan Fast Drills</h4>
+
+                        <span>Business Owner</span>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="card">
+            <!-- Review Cards -->
 
-                <i class="fa-solid fa-clock"></i>
+            <div class="review-list">
 
-                <h2 id="pendingParcel">0</h2>
+                <!-- Review 1 -->
 
-                <span>Pending</span>
+                <div class="review-card">
+
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+
+                    <p>
+                        Outstanding UI design and excellent support throughout
+                        the project.
+                    </p>
+
+                    <div class="mini-client">
+
+                        <img src="image/client2.jpg" alt="">
+
+                        <div>
+
+                            <h4>Arun Kumar</h4>
+
+                            <span>Retail Business</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Review 2 -->
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+
+                    <p>
+                        Fast delivery, premium quality, and responsive on every
+                        device.
+                    </p>
+
+                    <div class="mini-client">
+
+                        <img src="image/client3.jpg" alt="">
+
+                        <div>
+
+                            <h4>Priya Fashion</h4>
+
+                            <span>Clothing Store</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Review 3 -->
+
+                <div class="review-card">
+
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+
+                    <p>
+                        Our website performance improved dramatically after the
+                        redesign. Highly recommended.
+                    </p>
+
+                    <div class="mini-client">
+
+                        <img src="image/client4.jpg" alt="">
+
+                        <div>
+
+                            <h4>RK Enterprises</h4>
+
+                            <span>Manufacturing</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="card">
-
-                <i class="fa-solid fa-truck"></i>
-
-                <h2 id="shippedParcel">0</h2>
-
-                <span>Shipped</span>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fa-solid fa-users"></i>
-
-                <h2 id="customerCount">0</h2>
-
-                <span>Customers</span>
-
-            </div>
-
-        </section>
-
-
-        <!-- Quick Actions -->
-
-        <section class="quick-actions">
-
-            <h3>Quick Actions</h3>
-
-            <div class="action-grid">
-
-                <a href="new-parcel.html" class="action-card">
-
-                    <i class="fa-solid fa-plus"></i>
-
-                    <span>New Parcel</span>
-
-                </a>
-
-                <a href="history.html" class="action-card">
-
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-
-                    <span>History</span>
-
-                </a>
-
-                <a href="label-v2.html" class="action-card">
-
-                    <i class="fa-solid fa-print"></i>
-
-                    <span>Print Label</span>
-
-                </a>
-
-                <a href="history.html" class="action-card">
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <span>Search</span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- Recent Orders -->
-
-        <section class="recent-orders">
-
-            <div class="section-title">
-
-                <h3>Recent Orders</h3>
-
-                <a href="history.html">View All</a>
-
-            </div>
-
-            <div class="order-list" id="recentOrders"></div>
-
-        </section>
+        </div>
 
     </div>
 
+    </section>
 
+    <!--=========================================
+                FAQ SECTION
+==========================================-->
 
-    <!-- Floating Button -->
+    <section class="faq" id="faq">
 
-    <a href="new-parcel.html" class="fab">
+    <div class="faq-container">
 
-        <i class="fa-solid fa-plus"></i>
+        <!-- Section Heading -->
 
-    </a>
+        <div class="faq-heading">
 
+            <span class="faq-badge">
+                <i class="ri-question-answer-line"></i>
+                Frequently Asked Questions
+            </span>
 
+            <h2>
+                Have Questions?
+                <span>We've Got Answers.</span>
+            </h2>
 
-    <!-- Bottom Navigation -->
+            <p>
+                Find answers to the most common questions about our web design,
+                development, and digital services.
+            </p>
 
-    <nav>
+        </div>
 
-        <a href="index.html" class="active">
+        <!-- FAQ List -->
 
-            <i class="fa-solid fa-house"></i>
+        <div class="faq-wrapper">
 
-            <span>Home</span>
+            <!-- FAQ 1 -->
 
-        </a>
+            <div class="faq-item active">
 
-        <a href="history.html">
+                <div class="faq-question">
 
-            <i class="fa-solid fa-box"></i>
+                    <h3>How long does it take to build a website?</h3>
 
-            <span>Orders</span>
+                    <i class="faq-icon ri-add-line"></i>
 
-        </a>
+                </div>
 
-        <a href="new-parcel.html">
+                <div class="faq-answer">
 
-            <i class="fa-solid fa-square-plus"></i>
+                    <p>
+                        Most business websites are completed within 1–3 weeks,
+                        depending on the project size, features, and revisions.
+                    </p>
 
-            <span>New</span>
+                </div>
 
-        </a>
+            </div>
 
-        <a href="label-v2.html">
+            <!-- FAQ 2 -->
 
-            <i class="fa-solid fa-print"></i>
+            <div class="faq-item">
 
-            <span>Label</span>
+                <div class="faq-question">
 
-        </a>
+                    <h3>Do you create responsive websites?</h3>
 
-        <a href="login.html">
+                    <i class="faq-icon ri-add-line"></i>
 
-            <i class="fa-solid fa-gear"></i>
+                </div>
 
-            <span>Settings</span>
+                <div class="faq-answer">
 
-        </a>
+                    <p>
+                        Yes. Every website we build is fully responsive and
+                        optimized for desktop, tablet, and mobile devices.
+                    </p>
 
-    </nav>
+                </div>
+
+            </div>
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Can you redesign my existing website?</h3>
+
+                    <i class="faq-icon ri-add-line"></i>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Absolutely. We can modernize your current website with a
+                        fresh design, improved performance, and a better user experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Do you provide domain and hosting support?</h3>
+
+                    <i class="faq-icon ri-add-line"></i>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. We can help you choose the right domain, hosting,
+                        and configure everything for a smooth website launch.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 5 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Will my website be SEO friendly?</h3>
+
+                    <i class="faq-icon ri-add-line"></i>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Every website includes clean code, fast loading,
+                        responsive design, and SEO best practices to improve search visibility.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 6 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Do you offer website maintenance after launch?</h3>
+
+                    <i class="faq-icon ri-add-line"></i>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. We provide ongoing maintenance, updates, security
+                        monitoring, backups, and technical support after your website goes live.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom CTA -->
+
+        <div class="faq-contact">
+
+            <h3>Still have questions?</h3>
+
+            <p>
+                We'd love to discuss your project and help you choose the perfect solution.
+            </p>
+
+            <a href="#contact" class="faq-btn">
+                Contact Us
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
 
     </div>
 
-    <script type="module" src="app.js"></script>
+    </section>
 
+    <!--=========================================
+            CONTACT SECTION
+==========================================-->
+
+    <section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <!-- Heading -->
+
+        <div class="contact-heading">
+
+            <span class="contact-badge">
+                <i class="ri-customer-service-2-line"></i>
+                Contact Us
+            </span>
+
+            <h2>
+                Let's Build Your
+                <span>Next Digital Success</span>
+            </h2>
+
+            <p>
+                Whether you're starting a new business or upgrading your
+                existing website, we're here to help turn your ideas into a
+                premium digital experience.
+            </p>
+
+        </div>
+
+        <!-- Contact Grid -->
+
+        <div class="contact-wrapper">
+
+            <!-- Left Form -->
+
+            <div class="contact-form-box">
+
+                <h3>Send Us a Message</h3>
+
+                <form id="contactForm">
+
+                    <div class="input-row">
+
+                        <div class="input-box">
+                            <label>Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-box">
+                            <label>Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                    </div>
+
+                    <div class="input-row">
+
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+
+                        <div class="input-box">
+                            <label>Company Name</label>
+                            <input type="text" id="company" placeholder="Your business">
+                        </div>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Service Required</label>
+
+                        <select id="service">
+
+                            <option>Business Website</option>
+                            <option>E-Commerce Website</option>
+                            <option>Landing Page</option>
+                            <option>Website Redesign</option>
+                            <option>Portfolio Website</option>
+                            <option>Custom Development</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Your Message</label>
+
+                        <textarea rows="6"
+                            placeholder="Tell us about your project..." id="message"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="contact-btn" id="sendBtn">
+
+                        <span id="btnText">
+                            Send Message
+                        </span>
+
+                        <i class="ri-send-plane-fill"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="contact-info">
+
+                <div class="info-card">
+
+                    <i class="ri-phone-fill"></i>
+
+                    <div>
+
+                        <h4>Phone</h4>
+
+                        <p>+91 90953 88843</p>
+
+                        <p>+91 94881 61788</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="ri-mail-fill"></i>
+
+                    <div>
+
+                        <h4>Email</h4>
+
+                        <p>contact@nisitewebcraft.com</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="ri-map-pin-2-fill"></i>
+
+                    <div>
+
+                        <h4>Location</h4>
+
+                        <p>Tamil Nadu, India</p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="ri-time-fill"></i>
+
+                    <div>
+
+                        <h4>Working Hours</h4>
+
+                        <p>Mon - Sat</p>
+
+                        <p>9:00 AM - 7:00 PM</p>
+
+                    </div>
+
+                </div>
+
+                <a href="https://wa.me/919095388843" class="whatsapp-btn">
+
+                    <i class="ri-whatsapp-fill"></i>
+
+                    Chat on WhatsApp
+
+                </a>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/profile.php?id=61592263341607"><i class="ri-facebook-fill"></i></a>
+
+                    <a href="https://www.instagram.com/nisitewebcraft/?hl=en"><i class="ri-instagram-line"></i></a>
+
+                    <a href="https://www.linkedin.com/in/nisitewebcraft/"><i class="ri-linkedin-fill"></i></a>
+
+                    <a href="https://github.com/NigilmuruganSasikumar-coder"><i class="ri-github-fill"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <i class="ri-checkbox-circle-fill"></i>
+
+        <h2>Message Sent!</h2>
+
+        <p>
+
+            Thank you for contacting Nisite Webcraft.
+
+            We will reply within 24 hours.
+
+        </p>
+
+        <button onclick="closePopup()">
+
+            Close
+
+        </button>
+
+    </div>
+
+    </div>
+
+    <!--=========================================
+                FOOTER
+==========================================-->
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Left Side -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <img src="image/logo.jpeg" alt="Nisite Webcraft">
+
+                <h2>Nisite Webcraft</h2>
+
+            </div>
+
+            <p>
+
+                We build premium websites that combine modern design,
+                seamless performance, and exceptional user experiences.
+                Helping businesses establish a strong digital presence.
+
+            </p>
+
+            <div class="footer-contact">
+
+                <div>
+
+                    <i class="ri-phone-fill"></i>
+
+                    <span>+91 90953 88843</span>
+
+                </div>
+
+                <div>
+
+                    <i class="ri-mail-fill"></i>
+
+                    <span>contact@nisitewebcraft.com</span>
+
+                </div>
+
+                <div>
+
+                    <i class="ri-map-pin-fill"></i>
+
+                    <span>Tamil Nadu, India</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Links -->
+
+        <div class="footer-links">
+
+            <h3>Company</h3>
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="portfelio.html">Portfolio</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="testimonials.html">Testimonials</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <!-- Services -->
+
+        <div class="footer-links">
+
+            <h3>Services</h3>
+
+            <a href="services.html">Business Website</a>
+
+            <a href="services.html">E-Commerce</a>
+
+            <a href="services.html">Landing Page</a>
+
+            <a href="services.html">UI / UX Design</a>
+
+            <a href="services.html">Website Redesign</a>
+
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="footer-newsletter">
+
+            <h3>Newsletter</h3>
+
+            <p>
+
+                Subscribe to receive the latest updates,
+                offers and web design tips.
+
+            </p>
+
+            <form>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email">
+
+                <button>
+
+                    <i class="ri-send-plane-fill"></i>
+
+                </button>
+                
+
+            </form>
+
+            <div class="footer-join">
+                <p>
+                    Join our team of talented designers and developers
+                    to create innovative digital experiences.
+                </p>
+                <a href="login.html" class="join-btn">
+            <span>Join Our Team</span>
+            <i class="ri-arrow-right-up-line"></i>
+        </a>
+            </div>
+
+            <div class="footer-social">
+
+                <a href="https://www.facebook.com/profile.php?id=61592263341607"><i class="ri-facebook-fill"></i></a>
+
+                <a href="https://www.instagram.com/nisitewebcraft/?hl=en"><i class="ri-instagram-line"></i></a>
+
+                <a href="https://www.linkedin.com/in/nisitewebcraft/"><i class="ri-linkedin-fill"></i></a>
+
+                <a href="https://github.com/NigilmuruganSasikumar-coder"><i class="ri-github-fill"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 <strong>Nisite Webcraft</strong>.
+            All Rights Reserved.
+
+        </p>
+
+        <p>
+
+            Designed & Developed with
+            <i class="ri-heart-fill"></i>
+            by Nisite Webcraft
+
+        </p>
+
+    </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YOUR_PUBLIC_KEY");
+    </script>
+
+    <script src="script.js"></script>
 </body>
-
-</html>
+</html>        
